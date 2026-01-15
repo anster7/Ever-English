@@ -1,11 +1,11 @@
 
 import React, { useState, useEffect } from 'react';
-import Header from './components/Header';
-import LandingPage from './components/LandingPage';
-import AdminDashboard from './components/AdminDashboard';
-import Footer from './components/Footer';
-import { INITIAL_SITE_DATA } from './constants';
-import { SiteData, ViewMode, UserPage } from './types';
+import Header from './components/Header.tsx';
+import LandingPage from './components/LandingPage.tsx';
+import AdminDashboard from './components/AdminDashboard.tsx';
+import Footer from './components/Footer.tsx';
+import { INITIAL_SITE_DATA } from './constants.ts';
+import { SiteData, ViewMode, UserPage } from './types.ts';
 
 const App: React.FC = () => {
   const [viewMode, setViewMode] = useState<ViewMode>('user');

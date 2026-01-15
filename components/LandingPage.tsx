@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { SiteData, UserPage } from '../types';
+import { SiteData, UserPage } from '../types.ts';
 
 interface LandingPageProps {
   data: SiteData;

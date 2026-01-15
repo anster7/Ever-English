@@ -43,12 +43,20 @@
                 radial-gradient(at 100% 100%, hsla(142, 71%, 95%, 1) 0, transparent 50%), 
                 radial-gradient(at 0% 100%, hsla(48, 100%, 95%, 1) 0, transparent 50%);
         }
+        .animate-fadeIn {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 <script type="importmap">
 {
   "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
     "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
   }
 }
@@ -56,5 +64,6 @@
 </head>
 <body class="bg-gray-50">
     <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>

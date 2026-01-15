@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ViewMode, UserPage } from '../types';
+import { ViewMode, UserPage } from '../types.ts';
 
 interface HeaderProps {
   viewMode: ViewMode;
